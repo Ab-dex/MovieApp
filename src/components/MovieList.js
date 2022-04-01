@@ -10,12 +10,12 @@ const MovieList = () => {
   useEffect(() => {
     const fetchData = async () => {
       const request1 = await axios.get(
-        "http://www.omdbapi.com/?s=star wars&apikey=dfc79c7"
+        "https://www.omdbapi.com/?s=star wars&apikey=dfc79c7"
       );
       setSWMovies(request1.data.Search);
 
       const request2 = await axios.get(
-        "http://www.omdbapi.com/?s=the big bang theory&apikey=dfc79c7"
+        "https://www.omdbapi.com/?s=the big bang theory&apikey=dfc79c7"
       );
       setAMovies(request2.data.Search);
     };
